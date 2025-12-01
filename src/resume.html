@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Resume</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/resume.css">
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Open Mobile Nav
+      const mobileMenuTrigger = document.getElementById(
+        "mobile-nav-open-trigger"
+      );
+      const mobileMenu = document.getElementById("mobile-nav");
+      if (mobileMenuTrigger && mobileMenu) {
+        mobileMenuTrigger.addEventListener("click", () => {
+          console.log(mobileMenuTrigger, mobileMenu)
+          if (mobileMenu) {
+            mobileMenu.classList.add("display-block");
+            document.querySelector("body").classList.add("overflow-hidden");
+          } else {
+            console.log("mobileMenu not found");
+          }
+        });
+      }
+
+      const mobileNavCloseBtn = document.getElementById("mobile-nav-close-btn");
+      if (mobileNavCloseBtn && mobileMenu) {
+        mobileNavCloseBtn.addEventListener("click", () => {
+          mobileMenu.classList.remove("display-block");
+          document.querySelector("body").classList.remove("overflow-hidden");
+        });
+      }
+    });
+  </script>
+  <body>
+    <!-- Top Section-->
+    <header id="header" class="p-md flex items-center min-h-80">
+      <div class="content-wrapper flex justify-between items-center">
+        <section id="left-section" class="flex items-center gap-10">
+          <div id="logo">
+            <a href="../index.html" class="flex items-center gap-10">
+              <div id="logo-icon"></div>
+              <h4>Abubakar</h4>
+            </a>
+          </div>
+
+          <div id="title">
+            <h6>Full Stack Dev</h6>
+          </div>
+        </section>
+
+        <nav id="navigation-menu">
+          <menu class="flex items-center">
+            <li><a href="/src/resume.html">Resume</a></li>
+            <li><a href="/src/project.html">Projects</a></li>
+            <li><a href="/src/contact.html">Contact</a></li>
+          </menu>
+        </nav>
+      <div id="mobile-nav-open-trigger">
+          <i class="material-icons"> menu </i>
+        </div>
+    </header>
+    <div id="mobile-nav">
+        <div id="mobile-nav-close-btn">
+          <i class="material-icons"> close </i>
+        </div>
+      <menu class="flex items-center flex-col">
+        <li><a href="/src/resume.html">Resume</a></li>
+        <li><a href="/src/project.html">Projects</a></li>
+        <li><a href="/src/contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </menu>
+    </div>
+
+    <!-- Middle Section -->
+      <main id="main">
+      <div class="content-wrapper flex flex-col py-3xl">
+        <h1 class="text-heading">Resume</h1>
+        <!-- Work Experience -->
+        <section class="resume-item">
+          <h2>Work<br />Experience</h2>
+          <!-- Work Experience Item - 1 -->
+          <div class="resume-details">
+            <section class="resume-details-group">
+              <p class="year-column">2035 - Present</p>
+              <div class="description-column">
+                <h3>Editor</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Delectus tenetur officiis repellat quod explicabo natus
+                  reprehenderit voluptates veniam nam quis.
+                </p>
+              </div>
+            </section>
+            <!-- Work Experience Item - 2 -->
+            <section class="resume-details-group">
+              <p class="year-column">2035 - 2035</p>
+              <div class="description-column">
+                <h3>Writer at Large</h3>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Officiis, ea! Officiis, tempore atque inventore cum impedit
+                  expedita dignissimos saepe neque modi quidem sed at quos
+                  nesciunt est fuga corporis commodi!
+                </p>
+              </div>
+            </section>
+            <!-- Work Experience Item - 3 -->
+            <section class="resume-details-group">
+              <p class="year-column">2035 - 2035</p>
+              <div class="description-column">
+                <h3>Intern</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Incidunt quis quo corporis quaerat odio magni, ipsa aliquam
+                  voluptatibus officia dolores?
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section class="resume-item">
+          <h2>Education</h2>
+          <div class="resume-details">
+            <!-- Education Item - 1 -->
+            <section class="resume-details-group">
+              <p class="year-column">2035 - 2035</p>
+              <div class="description-column">
+                <h3>Establishment Name | Master's Degree</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
+                  debitis aliquid unde esse! Corporis, quaerat!
+                </p>
+              </div>
+            </section>
+            <!-- Education Item - 2 -->
+            <section class="resume-details-group">
+              <p class="year-column">2035 - 2035</p>
+              <div class="description-column">
+                <h3>Establishment Name | Bachelor's Degree</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  autem aperiam eius necessitatibus cum vero! Tenetur debitis
+                  maxime inventore nulla!
+                </p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!-- Skills & Expertise -->
+        <section class="resume-item">
+          <h2>Skills<br />& Expertise</h2>
+          <!-- Skills Item - 1 -->
+          <section class="resume-details">
+            <div class="resume-details-group">
+              <p class="year-column"></p>
+              <ul class="list-side">
+                <li>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consectetur, a?
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+                  sapiente dolores quis aspernatur commodi assumenda maiores
+                  labore, non magnam nihil!
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Veniam, eius hic. Quas soluta nostrum corporis!
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
+    <!-- Bottom Section -->
+    <footer id="footer" class="h-200">
+      <div class="content-wrapper flex justify-between items-center flex">
+        <p class="flex flex-col gap-5">
+          <span class="bold">Phone</span> <span>+2347070378221</span>
+        </p>
+        <p class="flex flex-col gap-5">
+          <span class="bold">Email</span> <span>sediqabubakar249@gmail.com</span>
+        </p>
+        <p class="flex flex-col gap-5">
+          <span class="bold">Follow Me</span>
+          <span class="flex gap-20">
+            <span id="linkedin">
+              <img
+                src="/image/img-2.png"
+                alt="ln"
+                class="icon grayscale"
+              />
+            </span>
+            <span id="twitter">
+              <img
+                src="/image/img-9.png"
+                alt="x"
+                class="icon brightness-0"
+              />
+            </span>
+          </span>
+        </p>
+        <p class="text-sm">&copy; 2035 | By Abubakar</p>
+      </div>
+    </footer>
+  </body>
+</html>

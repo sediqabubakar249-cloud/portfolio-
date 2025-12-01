@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio | Contact</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"/>
+  </head>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Open Mobile Nav
+      const mobileMenuTrigger = document.getElementById(
+        "mobile-nav-open-trigger"
+      );
+      const mobileMenu = document.getElementById("mobile-nav");
+      if (mobileMenuTrigger && mobileMenu) {
+        mobileMenuTrigger.addEventListener("click", () => {
+          console.log(mobileMenuTrigger, mobileMenu)
+          if (mobileMenu) {
+            mobileMenu.classList.add("display-block");
+            document.querySelector("body").classList.add("overflow-hidden");
+          } else {
+            console.log("mobileMenu not found");
+          }
+        });
+      }
+
+      const mobileNavCloseBtn = document.getElementById("mobile-nav-close-btn");
+      if (mobileNavCloseBtn && mobileMenu) {
+        mobileNavCloseBtn.addEventListener("click", () => {
+          mobileMenu.classList.remove("display-block");
+          document.querySelector("body").classList.remove("overflow-hidden");
+        });
+      }
+    });
+  </script>
+  <body>
+    <!-- Top Section-->
+    <header id="header" class="p-md flex items-center min-h-80">
+      <div class="content-wrapper flex justify-between items-center">
+        <section id="left-section" class="flex items-center gap-10">
+          <div id="logo">
+            <a href="../index.html" class="flex items-center gap-10">
+              <div id="logo-icon"></div>
+              <h4>Abubakar</h4>
+            </a>
+          </div>
+
+          <div id="title">
+            <h6>Full Stack Dev</h6>
+          </div>
+        </section>
+
+          <nav id="navigation-menu">
+          <menu class="flex items-center">
+            <li><a href="/src/resume.html">Resume</a></li>
+            <li><a href="/src/project.html">Projects</a></li>
+            <li><a href="/src/contact.html">Contact</a></li>
+          </menu>
+        </nav>
+      <div id="mobile-nav-open-trigger">
+          <i class="material-icons"> menu </i>
+        </div>
+    </header>
+      <div id="mobile-nav">
+        <div id="mobile-nav-close-btn">
+          <i class="material-icons"> close </i>
+        </div>
+      <menu class="flex items-center flex-col">
+        <li><a href="/src/resume.html">Resume</a></li>
+        <li><a href="/src/project.html">Projects</a></li>
+        <li><a href="/src/contact.html">Contact</a></li>
+        <li><a href="/index.html">Home</a></li>
+      </menu>
+    </div>
+
+   <!-- Middle Section -->
+    <div id="contact-main">
+      <div class="content-wrapper py-3xl flex gap-50 justify-between">
+        <!-- Left Section -->
+        <div class="flex flex-col gap-20">
+          <!-- Heading section -->
+          <div class="flex flex-col gap-10 form-heading">
+            <h1 class="h1">Contact Me</h1>
+            <p>Looking forward to hearing from you</p>
+          </div>
+          <!-- Details -->
+          <div class="flex flex-col gap-20 contact-info">
+            <p class="flex flex-col">
+              <span id="bold" class="bold">Phone</span> +2347070378221
+            </p>
+            <p class="flex flex-col">
+              <span id="bold" class="bold">Email</span> sediqabubakar249@gmail.com
+            </p>
+          </div>
+        </div>
+        <!-- Right Section -->
+        <div id="form-wrapper">
+          <form action="#" id="contact-form">
+            <!-- First name, Last Name Group -->
+            <div class="form-control">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="first-name" id="first-name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" required />
+              </div>
+            </div>
+            <!-- Email, Phone Number Group -->
+            <div class="form-control">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="" id="phone" required />
+              </div>
+            </div>
+            <!-- Message Group -->
+            <div class="form-group full-width">
+              <label for="message" class=" flex flex-col ">Message</label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <button type="submit" class="submit-side py-lg 
+            ">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Bottom Section -->
+    <footer id="footer" class="h-200">
+      <div class="content-wrapper flex justify-between items-center flex">
+        <p class="flex flex-col gap-5">
+          <span class="bold">Phone</span> <span class="number">+2347070378221</span>
+        </p>
+        <p class="flex flex-col gap-5">
+          <span class="bold">Email</span> <span class="email">sediqabubakar249@gmail.com</span>
+        </p>
+        <p class="flex flex-col gap-5">
+          <span class="bold">Follow Me</span>
+          <span class="flex gap-20">
+            <span id="linkedin">
+              <img
+                src="/image/img-2.png"
+                alt="ln"
+                class="icon grayscale"
+              />
+            </span>
+            <span id="twitter">
+              <img
+                src="/image/img-9.png"
+                alt="x"
+                class="icon brightness-0"
+              />
+            </span>
+          </span>
+        </p>
+        <p class="text-sm">&copy; 2035 | By Abubakar</p>
+      </div>
+    </footer>
+  </body>
+</html>

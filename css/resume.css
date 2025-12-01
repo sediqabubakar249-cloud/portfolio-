@@ -1,0 +1,102 @@
+main#main > div.content-wrapper {
+  gap: 100px;
+  max-width: 960px;
+}
+
+.resume-item {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    line-height: 1.725rem;
+    font-weight: 600;
+  }
+}
+
+.resume-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  h3 {
+    font-size: 1.125rem;
+  }
+}
+
+.description-column {
+  width: 75%;
+}
+
+.year-column {
+  width: 25%;
+}
+
+.resume-details-group {
+  display: flex;
+  gap: 10px;
+  ul {
+    width: 75%;
+    justify-self: flex-end;
+    padding-left: 1rem;
+    li {
+      list-style: disc;
+    }
+    li:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.description-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+
+  main#main > div.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+    }
+  }
+
+footer#footer {
+  padding-top: 24px;
+  border-style: solid;
+  border-width: 1px 0px 0px 0px;
+  border-color: var(--color-grey);
+}
+ 
+ 
+@media screen and (max-width: 768px) {  
+  main#main > div.content-wrapper {
+     padding-block: var(--padding-2xl);
+    h1 {
+      text-align: center;
+    }
+    
+  }
+    .resume-item {
+      flex-direction: column;
+      gap: 30px;
+      text-align:center;
+      
+      .description-column, .resume-details-group, 
+      .resume-details, .year-column, .list-side {
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+       gap: 20px;
+      }
+    }
+     #mobile-nav-open-trigger {
+    display: block;
+  }
+  #navigation-menu {
+		display: none;
+	}
+  }

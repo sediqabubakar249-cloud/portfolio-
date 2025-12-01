@@ -1,0 +1,121 @@
+#contact-main {
+  .content-wrapper {
+    max-width: 800px;
+   
+  }
+}
+
+.form-heading {
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 2.625rem;
+  }
+}
+
+.contact-info .bold {
+  font-size: 1.125rem;
+}
+
+#form-wrapper {
+  
+  width: 55%;
+  padding: 10px;
+}
+
+#contact-form {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .form-control {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    width: 48%;
+    input,
+    textarea,
+    button 
+    {     
+      border: 1px solid var(--color-grey-dark);
+      padding-inline: 10px;
+      padding-block: 12px;
+      outline: none;
+    }
+    textarea {
+      min-height:7.625rem;
+      max-width:100%;
+      min-width:100%;
+      resize:none;
+      padding-inline: 10px;
+      padding-block: 15px;
+      outline: none;
+    }
+  }
+
+}
+.full-width {
+  min-width:100%;
+}
+button {
+  border-radius:100px;
+outline: none;
+border: 1px solid var(--color-grey-dark);
+cursor: pointer;
+background-color: #EEA302;
+transition: background-color ease-in 0.25s;
+font-weight: 600;
+}
+button:hover {
+background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {  
+  #contact-main > div.content-wrapper {
+     padding-block: var(--padding-2xl);
+     text-align:center ;
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     justify-content: center;
+     width: 100%;
+
+     h1, .form-heading {
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      display: flex;
+    }
+  }
+  #form-wrapper {
+    .form-control, .form-group, .submit-side
+     {
+      width: 90vw ;
+      display: flex;
+      flex-direction:column;
+      gap:20px;
+      justify-content: center;
+      
+    }
+  }
+  #bold {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    text-align:center;
+  }
+     #mobile-nav-open-trigger {
+    display: block;
+  }
+  #navigation-menu {
+		display: none;
+	}
+}
