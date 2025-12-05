@@ -30,7 +30,6 @@ main#main {
     border-radius: 10px;
   }
 }
-
 .project-column {
   display: flex;
   flex-direction: column;
