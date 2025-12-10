@@ -7,7 +7,7 @@
 }
 
 #main-img {
-  background-image: url("/image/img-me.jpg");
+  background-image: url("/image/me-1.jpg");
   background-size: cover;
   background-position: top center;
   width: 900px;
@@ -36,7 +36,7 @@
   flex-wrap: wrap;
   gap: 28px;
   li {
-    border: 1.5px solid var(--color-grey-dark);
+    border: 1px solid black;
     border-radius: 50%;
     padding: 50px;
     height: 140px;
@@ -53,9 +53,11 @@
   }
 
   li:first-child {
+    border: 1px solid black;
     background: var(--color-yellow);
   }
   li:last-child {
+    border: 1px solid black;
     background: var(--color-green);
   }
 }
