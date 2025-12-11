@@ -80,19 +80,41 @@ background-color: transparent;
 
 @media screen and (max-width: 768px) {  
   #contact-main > div.content-wrapper {
-     padding-block: var(--padding-2xl);
      text-align:center ;
      display: flex;
      flex-direction: column;
-     justify-items: center;
      justify-content: center;
-     width: 100%;
+     align-items: center;
+
 
      h1, .form-heading {
       text-align: center;
       gap: 20px;
       align-items: center;
       display: flex;
+    }
+    #form-wrapper {
+      align-items: center;
+      justify-content: center;
+
+      form {
+        align-items: center;
+        justify-content: center;
+
+        input {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          width: 90vw;
+        }
+
+        .submit-side {
+          align-items: center;
+          justify-content: center;
+          width: 90vw;
+        }
+      }
     }
   }
   #form-wrapper {
@@ -103,6 +125,7 @@ background-color: transparent;
       flex-direction:column;
       gap:20px;
       justify-content: center;
+      align-items: center;
       
     }
   }
@@ -118,4 +141,62 @@ background-color: transparent;
   #navigation-menu {
 		display: none;
 	}
+}
+
+@media screen and (max-width: 320px) {
+  #contact-main > div.content-wrapper {
+    border: 2px solid red;
+     text-align:center ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     
+
+     h1, .form-heading {
+      text-align: center;
+      gap: 20px;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    #form-wrapper {
+      align-items: center;
+      justify-content: center;
+
+      form {
+        align-items: center;
+        justify-content: center;
+
+        input {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          justify-items: center;
+          width: 90vw;
+        }
+
+        .submit-side {
+          align-items: center;
+          justify-content: center;
+          width: 90vw;
+        }
+      }
+    }
+  }
+  #form-wrapper {
+    .form-control, .form-group, .submit-side
+     {
+      width: 90vw ;
+      display: flex;
+      flex-direction:column;
+      gap:20px;
+      justify-content: center;
+      align-items: center;
+      
+    }
+  }
+
+  
 }
