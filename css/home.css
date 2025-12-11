@@ -80,6 +80,8 @@
 
   #main-text {
     text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .index-main-body {
     padding-inline: 20px;
